@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RecyclerItemWrap2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/RecyclerItemConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextTrainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/train_name"
+            app:layout_constraintBottom_toTopOf="@+id/TextTrainNumb"
+            app:layout_constraintEnd_toStartOf="@+id/TextTypeTrain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/train_time"
+            app:layout_constraintBottom_toBottomOf="@+id/TextTrainNumb"
+            app:layout_constraintEnd_toStartOf="@+id/TextTrainNumb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TextTrainNumb" />
+
+        <TextView
+            android:id="@+id/TextTrainNumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/train_numb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/TextDuration"
+            app:layout_constraintStart_toEndOf="@+id/TextTime"
+            app:layout_constraintTop_toBottomOf="@+id/TextTrainName" />
+
+        <TextView
+            android:id="@+id/TextDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/train_time"
+            app:layout_constraintBottom_toBottomOf="@+id/TextTrainNumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TextTrainNumb"
+            app:layout_constraintTop_toTopOf="@+id/TextTrainNumb" />
+
+        <TextView
+            android:id="@+id/TextTypeTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/train_type"
+            app:layout_constraintBottom_toBottomOf="@+id/TextTrainName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TextTrainName"
+            app:layout_constraintTop_toTopOf="@+id/TextTrainName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

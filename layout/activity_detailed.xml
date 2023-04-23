@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewSlash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/slash"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBegin2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEnd2"
+        app:layout_constraintStart_toEndOf="@+id/textViewBegin2"
+        app:layout_constraintTop_toTopOf="@+id/textViewBegin2" />
+
+    <TextView
+        android:id="@+id/textViewSlash3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/slash"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBegin3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEnd3"
+        app:layout_constraintStart_toEndOf="@+id/textViewBegin3"
+        app:layout_constraintTop_toTopOf="@+id/textViewBegin3" />
+
+    <TextView
+        android:id="@+id/textViewSlash4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/slash"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBegin4"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEnd4"
+        app:layout_constraintStart_toEndOf="@+id/textViewBegin4"
+        app:layout_constraintTop_toTopOf="@+id/textViewBegin4" />
+
+    <TextView
+        android:id="@+id/textViewNameDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/train_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTypeTrainDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/train_type"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNumberTrainDetailed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameDetailed" />
+
+    <TextView
+        android:id="@+id/textViewNumberTrainDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/train_numb"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNameDetailed"
+        app:layout_constraintStart_toEndOf="@+id/textViewTypeTrainDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameDetailed" />
+
+    <TextView
+        android:id="@+id/textViewTimeDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/train_time"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDurationDetailed"
+        app:layout_constraintStart_toStartOf="@+id/textViewTypeTrainDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypeTrainDetailed" />
+
+    <TextView
+        android:id="@+id/textViewDurationDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/train_time"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNumberTrainDetailed"
+        app:layout_constraintStart_toEndOf="@+id/textViewTimeDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumberTrainDetailed" />
+
+    <TextView
+        android:id="@+id/textViewStop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/stop"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBegin1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeDetailed" />
+
+    <TextView
+        android:id="@+id/textViewStop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStop3"
+        app:layout_constraintEnd_toEndOf="@+id/textViewStop1"
+        app:layout_constraintStart_toStartOf="@+id/textViewStop1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStop1" />
+
+    <TextView
+        android:id="@+id/textViewStop3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStop4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewStop2"
+        app:layout_constraintStart_toStartOf="@+id/textViewStop2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStop2" />
+
+    <TextView
+        android:id="@+id/textViewStop4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewStop3"
+        app:layout_constraintStart_toStartOf="@+id/textViewStop3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStop3" />
+
+    <TextView
+        android:id="@+id/textViewBegin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/stop_from"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStop1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSlash1"
+        app:layout_constraintStart_toEndOf="@+id/textViewStop1"
+        app:layout_constraintTop_toTopOf="@+id/textViewStop1" />
+
+    <TextView
+        android:id="@+id/textViewEnd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/stop_to"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBegin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSlash1"
+        app:layout_constraintTop_toTopOf="@+id/textViewBegin1" />
+
+    <TextView
+        android:id="@+id/textViewBegin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_from"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBegin3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSlash2"
+        app:layout_constraintStart_toStartOf="@+id/textViewBegin1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBegin1" />
+
+    <TextView
+        android:id="@+id/textViewEnd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_to"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSlash2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEnd1"
+        app:layout_constraintStart_toEndOf="@+id/textViewSlash2"
+        app:layout_constraintTop_toTopOf="@+id/textViewSlash2" />
+
+    <TextView
+        android:id="@+id/textViewBegin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_from"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBegin4"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSlash3"
+        app:layout_constraintStart_toStartOf="@+id/textViewBegin2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBegin2" />
+
+    <TextView
+        android:id="@+id/textViewEnd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_to"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSlash3"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEnd2"
+        app:layout_constraintStart_toEndOf="@+id/textViewSlash3"
+        app:layout_constraintTop_toTopOf="@+id/textViewSlash3" />
+
+    <TextView
+        android:id="@+id/textViewBegin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_from"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSlash4"
+        app:layout_constraintStart_toStartOf="@+id/textViewBegin3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBegin3" />
+
+    <TextView
+        android:id="@+id/textViewEnd4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_to"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSlash4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEnd3"
+        app:layout_constraintStart_toEndOf="@+id/textViewSlash4"
+        app:layout_constraintTop_toTopOf="@+id/textViewSlash4" />
+
+    <TextView
+        android:id="@+id/textViewSlash1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slash"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBegin1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEnd1"
+        app:layout_constraintStart_toEndOf="@+id/textViewBegin1"
+        app:layout_constraintTop_toTopOf="@+id/textViewBegin1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CovidActivity">
+
+    <TextView
+        android:id="@+id/textViewCasesNewKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/newCases"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCasesAllKey"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCasesNewValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewCovidName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCovidName" />
+
+    <TextView
+        android:id="@+id/textViewCasesAllKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/allCases"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeathsNewKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCasesNewKey"
+        app:layout_constraintStart_toStartOf="@+id/textViewCasesNewKey"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCasesNewKey" />
+
+    <TextView
+        android:id="@+id/textViewDeathsNewKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/newDeaths"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeathsAllKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCasesAllKey"
+        app:layout_constraintStart_toStartOf="@+id/textViewCasesAllKey"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCasesAllKey" />
+
+    <TextView
+        android:id="@+id/textViewDeathsAllKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/allDeaths"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDeathsNewKey"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeathsNewKey"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeathsNewKey" />
+
+    <TextView
+        android:id="@+id/textViewCasesNewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCasesNewKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCovidName"
+        app:layout_constraintStart_toEndOf="@+id/textViewCasesNewKey"
+        app:layout_constraintTop_toTopOf="@+id/textViewCasesNewKey" />
+
+    <TextView
+        android:id="@+id/textViewCasesAllValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCasesAllKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCasesNewValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewCasesNewValue"
+        app:layout_constraintTop_toTopOf="@+id/textViewCasesAllKey" />
+
+    <TextView
+        android:id="@+id/textViewDeathNewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeathsNewKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCasesAllValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewCasesAllValue"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeathsNewKey" />
+
+    <TextView
+        android:id="@+id/textViewDeathsAllValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeathsAllKey"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDeathNewValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeathNewValue"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeathsAllKey" />
+
+    <TextView
+        android:id="@+id/textViewCovidName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/covidTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

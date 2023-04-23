@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EbulgarianRailway</string>
+    <string name="search_button">Търсене</string>
+    <string name="from">Начална гара</string>
+    <string name="to">Крайна гара</string>
+    <string name="name">Име</string>
+    <string name="stop">гара</string>
+    <string name="add">Добави</string>
+    <string name="update">Промени</string>
+    <string name="delete">Изтрий</string>
+    <string name="slash">-</string>
+    <string name="favourites">★</string>
+    <string name="important">❗</string>
+    <string name="stop_from">тръгва</string>
+    <string name="loading">Моля изчакайте</string>
+    <string name="stop_to">пристига</string>
+    <string name="train_type">Вид влак</string>
+    <string name="train_name">Име на влак</string>
+    <string name="train_numb">Номер на влак</string>
+    <string name="train_time">Време за пътуване:</string>
+    <string name="date">Дата(По презумция днешна)</string>
+    <string name="newCases">Нови случаи:</string>
+    <string name="allCases">Всчики случаи:</string>
+    <string name="allDeaths">Брой починали:</string>
+    <string name="newDeaths">Нови починали:</string>
+    <string name="covidTitle">Ковид статистика:</string>
+</resources>
